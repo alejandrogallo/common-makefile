@@ -22,8 +22,8 @@ help: ## Prints help for targets with comments
 		$(MAKEFILE_LIST)
 	@echo ""
 	@echo "  $(MAKEFILE_VERSION)"
-	@echo "  $(URL)"
-	@echo "  Copyright $(AUTHOR) $(LICENSE) $(MAKEFILE_DATE)"
+	@echo "  $(MAKEFILE_URL)"
+	@echo "  Copyright $(MAKEFILE_AUTHOR) $(MAKEFILE_LICENSE) $(MAKEFILE_DATE)"
 	@echo ""
 
 dnl vim: noexpandtab
