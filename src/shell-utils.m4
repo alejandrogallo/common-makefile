@@ -1,4 +1,4 @@
-include_once(os.m4)dnl
+include_once(common-makefile/src/os.m4)dnl
 dnl
 # Shell used
 SH ?= bash
