@@ -38,3 +38,7 @@ UNIQ ?= uniq
 MAKE ?= $(or $(MAKE),make)
 # `rm` command
 RM ?= rm
+# For creating tags
+CXX ?= g++
+# For creating tags
+CC ?= gcc
