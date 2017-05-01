@@ -38,7 +38,9 @@ UNIQ ?= uniq
 MAKE ?= $(or $(MAKE),make)
 # `rm` command
 RM ?= rm
-# For creating tags
+# C++ compiler
 CXX ?= g++
-# For creating tags
+# C compiler
 CC ?= gcc
+# Fortran compiler
+FC ?= gfortran
