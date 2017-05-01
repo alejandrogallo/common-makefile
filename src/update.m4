@@ -2,7 +2,7 @@ include_once(common-makefile/src/log.m4)dnl
 include_once(common-makefile/src/shell-utils.m4)dnl
 dnl
 dnl
-MAKEFILE_UPDATE_URL ?= https://raw.githubusercontent.com/alejandrogallo/latex-makefile/master/dist/Makefile
+MAKEFILE_UPDATE_URL ?= _MAKEFILE_UPDATE_URL
 
 # ===============================
 # Update the makefile from source
