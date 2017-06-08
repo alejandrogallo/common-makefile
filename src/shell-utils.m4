@@ -44,3 +44,5 @@ CXX ?= g++
 CC ?= gcc
 # Fortran compiler
 FC ?= gfortran
+# M4 compiler
+M4 ?= m4
