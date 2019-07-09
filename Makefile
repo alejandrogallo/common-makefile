@@ -29,7 +29,7 @@ clean:
 	rm -rf dist build
 	make -C tests clean
 
-test: $(MAIN_BIN)
+test:
 	make -C tests/
 
 # vim: cc=80

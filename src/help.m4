@@ -1,7 +1,12 @@
-include_once(common-makefile/src/log.m4)dnl
-include_once(common-makefile/src/version.m4)dnl
-include_once(common-makefile/src/shell-utils.m4)dnl
-dnl
+ifdef(`__help_common_makefile__',,
+`define(`__help_common_makefile__',1)dnl
+include(`common-makefile/src/log.m4')dnl
+include(`common-makefile/src/version.m4')dnl
+include(`common-makefile/src/shell-utils.m4')dnl
+`#' File: __file__
+'dnl
+changequote([[,]])dnl
+[[
 # ================
 # Print quick help
 # ================
@@ -25,5 +30,7 @@ help: ## Prints help for targets with comments
 	@echo "  $(MAKEFILE_URL)"
 	@echo "  Copyright $(MAKEFILE_AUTHOR) $(MAKEFILE_LICENSE) $(MAKEFILE_DATE)"
 	@echo ""
-
+]]dnl
+changequote(`,')dnl
+)dnl
 dnl vim: noexpandtab

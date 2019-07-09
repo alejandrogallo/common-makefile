@@ -1,5 +1,7 @@
-include_once(common-makefile/src/log.m4)dnl
-include_once(common-makefile/src/shell-utils.m4)dnl
+ifdef(`__helptarget_common_makefile__',,`define(`__helptarget_common_makefile__',1)dnl
+include(common-makefile/src/log.m4)dnl
+include(common-makefile/src/shell-utils.m4)dnl
+`#' File: __file__
 dnl
 FORCE:
 help-%:
@@ -8,5 +10,5 @@ help-%:
 		| sed -n "1,/===/ {/===/n; s/^# //p}" \
 		| tac \
 		| sed -n "p; 1s/./=/gp; 1a\ "
-
-dnl vim: noexpandtab
+')dnl
+dnl vim:noexpandtab

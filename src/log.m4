@@ -1,4 +1,7 @@
-include_once(common-makefile/src/shell-utils.m4)dnl
+ifdef(`__log_common_makefile__',,
+`define(`__log_common_makefile__',1)dnl
+include(`common-makefile/src/shell-utils.m4')dnl
+`#' File: __file__
 dnl
 dnl
 dnl
@@ -6,7 +9,7 @@ dnl
 QUIET ?= 0
 # If the log messages should be also muted
 QQUIET     ?=
-# If the commands issued should be printed write `DEBUG=1` if you want to see
+# If the commands issued should be printed write DEBUG=1 if you want to see
 # all commands.
 DEBUG      ?=
 # For coloring
@@ -104,5 +107,5 @@ else
 ARROW           := @ > /dev/null echo
 ECHO            := @ > /dev/null echo
 endif #QQUIET
-
+')dnl
 dnl vim: noexpandtab

@@ -1,7 +1,11 @@
-include_once(common-makefile/src/log.m4)dnl
-include_once(common-makefile/src/shell-utils.m4)dnl
+ifdef(`__update_common_makefile__',,`define(`__update_common_makefile__',1)dnl
+include(`common-makefile/src/log.m4')dnl
+include(`common-makefile/src/shell-utils.m4')dnl
+`#' File: __file__
+'dnl
+changequote([[,]])dnl
 dnl
-dnl
+[[
 MAKEFILE_UPDATE_URL ?= _MAKEFILE_UPDATE_URL
 
 # ===============================
@@ -15,5 +19,7 @@ MAKEFILE_UPDATE_URL ?= _MAKEFILE_UPDATE_URL
 update: ## Update the makefile from the repository
 	$(ARROW) "Getting makefile from $(MAKEFILE_UPDATE_URL)"
 	$(DBG_FLAG)wget $(MAKEFILE_UPDATE_URL) -O Makefile
-
+]]
+changequote(`,')dnl
+)dnl
 dnl vim: noexpandtab

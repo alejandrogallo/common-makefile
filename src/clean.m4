@@ -1,6 +1,8 @@
-include_once(common-makefile/src/log.m4)dnl
-include_once(common-makefile/src/shell-utils.m4)dnl
+ifdef(`__clean_common_makefile__',,`define(`__clean_common_makefile__',1)dnl
 dnl
+include(`common-makefile/src/log.m4')dnl
+include(`common-makefile/src/shell-utils.m4')dnl
+`#' File: __file__
 # Remove command flags
 RM_FLAGS ?= -rf
 
@@ -27,5 +29,5 @@ clean: ## Remove build and temporary files
 		 } || : ; \
 		done \
 	}
-
-dnl vim: noexpandtab
+')dnl
+dnl vim:noexpandtab
